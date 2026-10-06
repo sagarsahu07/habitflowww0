@@ -1,0 +1,4 @@
+.greeting-card { padding: var(--space-lg) 0 var(--space-md); }
+.greeting-card__date { font-size: var(--font-size-sm); color: var(--color-text-secondary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.greeting-card__greeting { margin-top: var(--space-xs); font-size: var(--font-size-2xl); font-weight: var(--font-weight-semibold); letter-spacing: var(--letter-spacing-tight); line-height: var(--line-height-tight); }
+.greeting-card__welcome { margin-top: var(--space-xs); font-size: var(--font-size-md); color: var(--color-text-secondary); }

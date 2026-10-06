@@ -1,0 +1,4 @@
+.dashboard-page__stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-sm); }
+@media (min-width: 640px) {
+  .dashboard-page__stats-grid { grid-template-columns: repeat(3, 1fr); }
+}

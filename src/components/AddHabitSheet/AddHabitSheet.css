@@ -1,0 +1,57 @@
+.sheet__label { font-size: var(--font-size-sm); font-weight: var(--font-weight-medium); color: var(--color-text-secondary); }
+
+.sheet__input {
+  font-size: var(--font-size-lg);
+  padding: var(--space-sm) 0;
+  border-bottom: var(--border-width-thick) solid var(--color-border);
+  transition: border-color var(--transition-fast);
+}
+
+.sheet__input:focus-visible { border-bottom-color: var(--color-accent); box-shadow: none; border-radius: 0; }
+.sheet__input[aria-invalid="true"] { border-bottom-color: var(--color-danger); }
+.sheet__error { font-size: var(--font-size-xs); color: var(--color-danger); }
+
+.sheet__field-group { border: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-xs); }
+.sheet__legend { font-size: var(--font-size-sm); font-weight: var(--font-weight-medium); color: var(--color-text-secondary); padding: 0; }
+
+.sheet__select {
+  height: var(--touch-target);
+  padding: 0 var(--space-sm);
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  font-size: var(--font-size-md);
+  transition: border-color var(--transition-fast);
+}
+.sheet__select:hover { border-color: var(--color-text-secondary); }
+
+.sheet__icon-grid, .sheet__color-grid { display: flex; flex-wrap: wrap; gap: var(--space-xs); }
+
+.sheet__icon-btn {
+  width: var(--touch-target);
+  height: var(--touch-target);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-lg);
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+.sheet__icon-btn:hover { border-color: var(--color-accent); }
+.sheet__icon-btn:active { transform: scale(0.94); }
+.sheet__icon-btn--selected { background: var(--color-accent-soft); border-color: var(--color-accent); }
+
+.sheet__color-btn {
+  width: var(--touch-target);
+  height: var(--touch-target);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--border-width-thick) solid transparent;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+.sheet__color-btn[aria-pressed="true"] { border-color: var(--color-text-primary); }
+.sheet__color-btn:active { transform: scale(0.94); }

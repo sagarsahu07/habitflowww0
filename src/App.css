@@ -1,0 +1,8 @@
+.app {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.app__main {
+  padding-bottom: var(--space-xl);
+}

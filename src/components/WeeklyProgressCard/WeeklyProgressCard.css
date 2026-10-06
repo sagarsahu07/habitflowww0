@@ -1,0 +1,15 @@
+.weekly-progress { padding: var(--space-md); background: var(--color-surface); border: var(--border-width-thin) solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
+.weekly-progress__header { display: flex; align-items: baseline; gap: var(--space-xs); }
+.weekly-progress__percentage { font-family: var(--font-family-mono); font-variant-numeric: tabular-nums; font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); color: var(--color-text-primary); }
+.weekly-progress__header-label { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+
+.weekly-progress__bars { display: flex; justify-content: space-between; gap: var(--space-xs); margin-top: var(--space-md); height: 96px; }
+.weekly-progress__bar-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: var(--space-xs); }
+.weekly-progress__bar-track { width: 100%; height: 64px; display: flex; align-items: flex-end; border-radius: var(--radius-sm); background: var(--color-border); overflow: hidden; }
+.weekly-progress__bar-fill { width: 100%; min-height: 2px; background: var(--color-accent); border-radius: var(--radius-sm); transition: height var(--transition-base); }
+.weekly-progress__bar-label { font-family: var(--font-family-mono); font-size: var(--font-size-xs); color: var(--color-text-secondary); }
+
+.weekly-progress__summary { display: flex; gap: var(--space-md); margin-top: var(--space-md); padding-top: var(--space-md); border-top: var(--border-width-thin) solid var(--color-border); }
+.weekly-progress__summary-item { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.weekly-progress__summary-label { font-size: var(--font-size-xs); color: var(--color-text-secondary); }
+.weekly-progress__summary-value { font-size: var(--font-size-sm); font-weight: var(--font-weight-medium); color: var(--color-text-primary); }

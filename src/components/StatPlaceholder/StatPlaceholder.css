@@ -1,0 +1,3 @@
+.stat-placeholder { padding: var(--space-md); text-align: center; border: var(--border-width-thin) dashed var(--color-border); border-radius: var(--radius-md); }
+.stat-placeholder__value { font-family: var(--font-family-mono); font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); color: var(--color-text-secondary); }
+.stat-placeholder__label { margin-top: var(--space-xs); font-size: var(--font-size-xs); color: var(--color-text-secondary); }

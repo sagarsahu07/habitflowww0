@@ -1,0 +1,2 @@
+.analytics-card { padding: var(--space-md); background: var(--color-surface); border: var(--border-width-thin) solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
+.analytics-card__title { font-size: var(--font-size-sm); font-weight: var(--font-weight-medium); color: var(--color-text-secondary); margin-bottom: var(--space-sm); }

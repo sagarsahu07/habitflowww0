@@ -1,0 +1,75 @@
+.habit-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--color-surface);
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.habit-card:hover { border-color: var(--color-text-secondary); box-shadow: var(--shadow-md); }
+
+.habit-card__check {
+  flex-shrink: 0;
+  width: var(--touch-target);
+  height: var(--touch-target);
+  border-radius: var(--radius-full);
+  border: var(--border-width-thick) solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-on-accent);
+  transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+.habit-card__check:hover { border-color: var(--habit-accent, var(--color-accent)); }
+.habit-card__check:active { transform: scale(0.94); }
+.habit-card__check--done { background: var(--habit-accent, var(--color-accent)); border-color: var(--habit-accent, var(--color-accent)); }
+
+.habit-card__body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: var(--space-sm); }
+.habit-card__top { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-sm); }
+.habit-card__title-group { display: flex; align-items: baseline; gap: var(--space-xs); min-width: 0; }
+.habit-card__icon { flex-shrink: 0; font-size: var(--font-size-md); line-height: 1; }
+
+.habit-card__name {
+  min-width: 0;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.habit-card__streak {
+  flex-shrink: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 0.2em;
+  font-family: var(--font-family-mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--habit-accent, var(--color-accent));
+}
+.habit-card__streak-num { font-size: var(--font-size-md); font-weight: var(--font-weight-semibold); }
+.habit-card__streak-label { font-size: var(--font-size-xs); color: var(--color-text-secondary); }
+
+.habit-card__actions { flex-shrink: 0; display: flex; gap: var(--space-xs); }
+
+.habit-card__archive, .habit-card__delete {
+  flex-shrink: 0;
+  width: var(--touch-target);
+  height: var(--touch-target);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast), background var(--transition-fast), transform var(--transition-fast);
+}
+.habit-card__archive:hover { color: var(--color-accent); background: var(--color-accent-soft); }
+.habit-card__archive:active, .habit-card__delete:active { transform: scale(0.94); }
+.habit-card__delete:hover { color: var(--color-danger); background: var(--color-danger-soft); }
+
+@media (min-width: 640px) {
+  .habit-card { padding: var(--space-md) var(--space-lg); }
+}

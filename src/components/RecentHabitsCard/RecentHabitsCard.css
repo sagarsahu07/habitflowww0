@@ -1,0 +1,8 @@
+.recent-habits-card { display: flex; flex-direction: column; padding: var(--space-xs) var(--space-md); background: var(--color-surface); border: var(--border-width-thin) solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
+.recent-habits-card__row { display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm) 0; }
+.recent-habits-card__row + .recent-habits-card__row { border-top: var(--border-width-thin) solid var(--color-border); }
+.recent-habits-card__icon { flex-shrink: 0; font-size: var(--font-size-lg); line-height: 1; }
+.recent-habits-card__info { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.recent-habits-card__name { min-width: 0; font-size: var(--font-size-md); font-weight: var(--font-weight-medium); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.recent-habits-card__meta { font-size: var(--font-size-xs); color: var(--color-text-secondary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.recent-habits-card__empty { padding: var(--space-lg) var(--space-md); text-align: center; color: var(--color-text-secondary); font-size: var(--font-size-sm); background: var(--color-surface); border: var(--border-width-thin) solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }

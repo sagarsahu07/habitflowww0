@@ -1,0 +1,18 @@
+.day-strip { display: flex; gap: var(--space-xs); }
+.day-strip__item { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+
+.day-strip__dot {
+  width: 18px;
+  height: 18px;
+  border-radius: var(--radius-full);
+  border: var(--border-width-medium) solid var(--color-border);
+  background: transparent;
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+}
+
+.day-strip__dot--done {
+  background: var(--habit-accent, var(--color-accent));
+  border-color: var(--habit-accent, var(--color-accent));
+}
+
+.day-strip__label { font-family: var(--font-family-mono); font-size: var(--font-size-xs); color: var(--color-text-secondary); }

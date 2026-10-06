@@ -1,0 +1,2 @@
+.dashboard-section { margin-top: var(--space-lg); }
+.dashboard-section__title { font-size: var(--font-size-lg); font-weight: var(--font-weight-semibold); margin-bottom: var(--space-sm); }
